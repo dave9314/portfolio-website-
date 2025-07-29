@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dawit | Portfolio</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background: #007acc;
+      color: white;
+      padding: 2rem 0;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    nav {
+      margin-top: 1rem;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 3rem 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .download-btn {
+      display: inline-block;
+      background-color: #00bcd4;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background 0.3s ease;
+      margin-top: 20px;
+    }
+
+    .download-btn:hover {
+      background-color: #0198a3;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    form input, form textarea {
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+
+    form button {
+      background-color: #007acc;
+      color: white;
+      padding: 12px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    form button:hover {
+      background-color: #005fa3;
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Dawit Degu</h1>
+    <p>React Developer | Portfolio Website</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#cv">CV</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I'm Dawit, a passionate developer who loves building websites using React, HTML, CSS, and JavaScript. I am eager to grow and work on real-world projects.</p>
+  </section>
+
+  <section id="cv">
+    <h2>Download My CV</h2>
+    <p>You can download my resume here:</p>
+    <a href=""C:\Users\Dawit\Desktop\certeficates\OneDrive\Pictures\Screenshots\.vscode\dawit_cv.pdf"" download class="download-btn">Download Dawit_CV.pdf</a>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Feel free to send me a message directly through this form.</p>
+
+    <form action="https://formspree.io/f/mdkdzyga" method="POST">
+      <!-- 🔁 Replace your-email@example.com with your real email -->
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+
+      <!-- FormSubmit settings -->
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_autoresponse" value="Thanks for contacting me! I will respond shortly.">
+      <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Dawit degu. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
